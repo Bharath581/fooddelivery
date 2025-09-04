@@ -5,8 +5,25 @@ hamburger.addEventListener("click", () => navLinks.classList.toggle("show"));
 
 /**********  Restaurant data  **********/
 const restaurants = [
+  
   {
     id: 1,
+    name: "Andhra Restaurant",
+    img: "https://th.bing.com/th/id/R.fd0b396cddefde082d6e83586b1fe681?rik=ktsa4rX7JodiVg&riu=http%3a%2f%2fwww.toastfried.com%2fwp-content%2fuploads%2f2024%2f01%2fRestaurants-Hyderabad-Andhra-Pradesh-India.jpg&ehk=%2fcSYXWrpkM19j8srhRd0faJXPYXXBaLdsDhw0aliXVM%3d&risl=&pid=ImgRaw&r=0",
+    desc: "veg & seafood & curries & Non-veg & Sweets <p>⭐4.9</p>",
+    location: "Andhra Pradesh, India",
+    services: ["Dine-in"],
+    menu: [
+      { name:"double-ka-meetha",   img:"https://www.indianhealthyrecipes.com/wp-content/uploads/2023/03/double-ka-meetha-bread-meetha-680x680.jpg", desc:"Sweet", price:180 },
+      { name:"Prawn Curry",   img:"https://img.freepik.com/premium-photo/restaurantstyle-prawns-curry_977960-191.jpg", desc:"Coconut & tamarind gravy", price:260 },
+      { name:"Fish Recheado", img:"https://th.bing.com/th/id/R.17c8dabebe2929fa4ae4b54b06b29f6e?rik=34QTqx4zNBpt3g&riu=http%3a%2f%2f4.bp.blogspot.com%2f-zkusZDPBFOI%2fVX-8j27K0GI%2fAAAAAAAAPYE%2fRpOoQyyqMAc%2fw1200-h630-p-k-no-nu%2fSSWF-StuffedGrilledFish.JPG&ehk=oCAomzbRCkDWfTACe24DSr2P9gdGX6%2fR85xGYy4uuZM%3d&risl=&pid=ImgRaw&r=0",  desc:"Spicy recheado masala",    price:280 },
+      { name:"pootharekulu sweet",       img:"https://i.pinimg.com/736x/fa/2f/de/fa2fde86164da683e903ffc0467119cb.jpg",    price:450 },
+      { name:"Gongura chicken biryani",img:"https://images.hindustantimes.com/telugu/img/2022/12/14/960x540/Gongura_Chicken_Biryani_1671003873556_1671003883792_1671003883792.JPG",     price:250 },
+      { name:"Veg Thali",     img:"https://img.freepik.com/premium-photo/indian-hindu-veg-thali-also-known-as-food-platter-is-complete-lunch-dinner-meal-closeup-selective-focus_466689-9082.jpg?w=2000",        desc:"veg thali", price:149 }
+    ]
+  },
+  {
+    id: 2,
     name: "Taj Restaurant",
     img: "https://cdn.sanity.io/images/ocl5w36p/production/7cad9ba6f880ca50d14c05b69a42596dde902c8d-1400x1120.jpg",
     desc: "Authentic Mumbai biryani & kebabs <p>⭐4.8</p>",
@@ -21,7 +38,7 @@ const restaurants = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     name: "Maharastra Restaurant",
     img: "https://www.gannett-cdn.com/-mm-/11d1f5a0f30c78e5e42da1f24d951e3266ecd59c/c=0-61-2032-1208/local/-/media/USATODAY/USATODAY/2013/11/23/1385183471001-2-lemeurice-DorchesterCollection.jpg?width=3200&height=1680&fit=crop",
     desc: "Iconic North-Indian street food <p>⭐4.8</p>",
@@ -36,7 +53,7 @@ const restaurants = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: "Mumbai Café Restaurant",
     img: "https://cdn.vox-cdn.com/thumbor/F1tOZxm_cQU7jF2cTr0mGHXbaz0=/0x0:3600x2400/720x0/filters:focal(0x0:3600x2400):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24879564/AsaGagaKamon_EaterSD_KimberlyMotos_9of32___1_.jpg",
     desc: "Fusion dishes & famous vada pav <p>⭐4.5</p>",
@@ -51,7 +68,7 @@ const restaurants = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Chennai Hub Restaurant",
     img: "https://www.myyellowplate.com/wp-content/uploads/2021/10/Zambar-South-Indian-Restaurants-in-Gurgaon.jpg",
     desc: "Crispy dosas & South-Indian delights <p>⭐4.3</p>",
@@ -66,7 +83,7 @@ const restaurants = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Kolkata Restaurant",
     img: "https://i0.wp.com/imp.news/wp-content/uploads/2021/10/Alfresco-The-Lalit-Great-Eastern.jpg?ssl=1",
     desc: "Famous kathi rolls & street bites <p>⭐4.5</p>",
@@ -81,7 +98,7 @@ const restaurants = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "Goa Shack Grill Restaurant",
     img: "https://thetravelingca.com/wp-content/uploads/2020/08/thalsa-01_compress81.jpg",
     desc: "Beachside seafood & Portuguese curries <p>⭐4.8</p>",
@@ -93,6 +110,21 @@ const restaurants = [
       { name:"Bebinca",       img:"https://www.shutterstock.com/image-photo/bebinka-on-iron-platter-blurred-600nw-2310571557.jpg",     desc:"Goan layered dessert",    price:120 },
       { name:"Xacuti Chicken",img:"https://www.whiskaffair.com/wp-content/uploads/2019/03/Chicken-Vindaloo-1-1.jpg",      desc:"Roasted spice curry",      price:240 },
       { name:"Tandoori Lobster",     img:"https://th.bing.com/th/id/R.4ef92186a0d9f4568d0338b2bbbb30a7?rik=e96r3n8oeTZWSg&riu=http%3a%2f%2fmedia.cntraveller.in%2fwp-content%2fuploads%2f2015%2f12%2fgoas50bestmealslead.jpg&ehk=vgRAv4%2fx0ZxYTK5HxZCxGlTJE1wfvL11w0EqT%2fp9XWg%3d&risl=&pid=ImgRaw&r=0",        desc:"spicy and flavorfu", price:199 }
+    ]
+  },
+  {
+    id: 8,
+    name: "Hyderabad Restaurant",
+    img: "https://b.zmtcdn.com/data/pictures/3/92123/83e9e5105d136bfcd65bb30cd139f643.jpg",
+    desc: "Hyderabadi specials <p>⭐4.8</p>",
+    location: "Hyderabad, India",
+    services: ["Dine-in"],
+    menu: [
+      { name:"Hyderabadi Biryani",   img:"https://foodalltime.com/wp-content/uploads/2018/07/Hyderabadi-Mutton-Dum-Biryani-Recipe-_-Hyderabadi-Dum-Biryani-Recipe-1.png", desc:"Spiced ", price:260 },
+      { name:"Boti Kebab", img:"https://dubai-on.com/wp-content/uploads/2021/06/best-kebabs-in-dubai.jpg",  price:280 },
+      { name:"Chicken Dum Biryani",       img:"https://static.vecteezy.com/system/resources/previews/040/703/949/non_2x/ai-generated-royal-feast-master-the-art-of-chicken-biryani-at-home-generative-ai-photo.jpg",  price:249 },
+      { name:"Haleem",img:"https://www.thedeliciouscrescent.com/wp-content/uploads/2020/08/Haleem-4.jpg",desc:"Sweet" ,price:149 },
+      { name:"California-style pizza",     img:"https://i0.wp.com/www.thecandidcooks.com/wp-content/uploads/2022/07/california-veggie-pizza-feature.jpg?fit=1920%2C1280&ssl=1",price:199 }
     ]
   }
 ];
